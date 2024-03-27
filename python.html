@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Python</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='course-style.css') }}">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Início</a></li>
+                <li><a href="{{ url_for('curso_css') }}">Curso de CSS</a></li>
+                <li><a href="{{ url_for('curso_python') }}">Curso de Python</a></li>
+                <li><a href="{{ url_for('curso_javascript') }}">Curso de JavaScript</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <img src="{{ url_for('static', filename='icons8-python-48.png') }}" alt="Ícone do Python">
+            <h1 class="title">Bem-vindo ao <br>Curso de Python<br></h1>
+            <p class="subtitle">Aprenda uma das linguagens de programação <br>mais populares e versáteis<br>.</p>
+        </div>
+    </section>
+
+    <section class="course-content">
+        <div class="container">
+            <h2>Por que aprender Python?</h2>
+            <p>O Python é uma linguagem de programação poderosa e fácil de aprender. É amplamente utilizada em áreas como desenvolvimento web, ciência de dados, automação, inteligência artificial e muito mais.</p>
+            <h2>Benefícios de aprender Python:</h2>
+            <ul>
+                <li>Escreva código limpo, legível e expressivo</li>
+                <li>Desenvolva aplicações web, scripts, jogos e muito mais</li>
+                <li>Acesse uma vasta coleção de bibliotecas e frameworks</li>
+            </ul>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/S9uPNppGsGo?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dev Solidário. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>

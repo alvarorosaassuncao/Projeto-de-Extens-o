@@ -1,0 +1,79 @@
+/* Estilos para a área de login semelhante à Netflix */
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: rgba(0, 0, 0, 0.75); /* Cor de fundo escura com transparência */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Sombra para o contêiner */
+    text-align: center;
+    width: 300px; /* Largura do contêiner */
+}
+
+.login-container h2 {
+    color: #fff; /* Cor do texto */
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login-form label {
+    color: #fff; /* Cor do texto do label */
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1); /* Cor de fundo do input com transparência */
+    color: #fff; /* Cor do texto do input */
+    outline: none; /* Remover borda de foco */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    background-color: #e50914; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-form button:hover {
+    background-color: #ff0a16; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.login-form button {
+    width: 100%;
+    padding: 10px; /* Reduzindo o padding para deixar o botão um pouco menor */
+    border: none;
+    border-radius: 4px;
+    background-color: #e50914; /* Cor de fundo do botão */
+    color: #fff; /* Cor do texto do botão */
+    font-size: 14px; /* Reduzindo o font-size do botão */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
