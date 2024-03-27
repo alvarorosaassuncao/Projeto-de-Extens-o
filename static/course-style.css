@@ -1,0 +1,105 @@
+/* Estilos para a página do curso de CSS */
+
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    background-color: #0aa037;
+    padding: 20px 0;
+}
+
+.header .nav {
+    text-align: center;
+}
+
+.header .nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header .nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header .nav ul li:last-child {
+    margin-right: 0;
+}
+
+.header .nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.header .nav ul li a:hover {
+    color: #f39c12;
+}
+
+.hero {
+    background-color: #ecf0f1;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero .title {
+    font-size: 36px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.hero .subtitle {
+    font-size: 18px;
+    color: #e6e1e1;
+}
+
+.course-content {
+    padding: 50px 0;
+}
+
+.course-content h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.course-content p {
+    font-size: 16px;
+    color: #34495e;
+    line-height: 1.5;
+}
+
+.course-content ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.course-content ul li {
+    margin-bottom: 10px;
+}
+
+.footer {
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.hero {
+    background-image: url('background2.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 100px 0;
+    text-align: center;
+}

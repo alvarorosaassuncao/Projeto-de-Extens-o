@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dev Solidário</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        /* Estilos adicionais para a galeria de vídeos */
+        .video-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .video-wrapper {
+            width: calc(50% - 10px); /* 50% - espaçamento entre os vídeos */
+            height: 315px;
+        }
+
+        .video-wrapper iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        @media (max-width: 600px) {
+            .video-wrapper {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <ul>
+                <li><a href="{{ url_for('index') }}">Início</a></li>
+                <li><a href="{{ url_for('curso_css') }}">Curso de CSS</a></li>
+                <li><a href="{{ url_for('curso_python') }}">Curso de Python</a></li>
+                <li><a href="{{ url_for('curso_javascript') }}">Curso de JavaScript</a></li>
+                <li><a href="{{ url_for('contato') }}">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Bem-vindo ao Dev Solidário</h1>
+            <p>Uma plataforma para aprender e compartilhar conhecimento!</p>
+            <a href="{{ url_for('conteudos') }}" class="entrar-btn">Entrar</a>
+        </div>
+    </section>
+
+    <section class="icons">
+        <div class="container">
+            <a href="{{ url_for('curso_css') }}">
+                <img src="{{ url_for('static', filename='icons8-css-48.png') }}" alt="CSS">
+                <p class="course-description">Aprenda a estilizar páginas web com CSS</p>
+            </a>
+            <a href="{{ url_for('curso_python') }}">
+                <img src="{{ url_for('static', filename='icons8-python-48.png') }}" alt="Python">
+                <p class="course-description">Domine a linguagem Python</p>
+            </a>
+            <a href="{{ url_for('curso_javascript') }}">
+                <img src="{{ url_for('static', filename='icons8-javascript-48.png') }}" alt="JavaScript">
+                <p class="course-description">Explore o poder do JavaScript </p>
+            </a>
+        </div>
+    </section>
+
+    
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Dev Solidário. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
